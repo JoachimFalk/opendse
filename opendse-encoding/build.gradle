@@ -1,7 +1,11 @@
 dependencies {	
 	compile parent.project('opendse-model')
 	compile parent.project('opendse-optimization')
-	compile 'com.github.felixreimann:opt4j:v3.2'
+	if ((rootProject.subprojects.findAll { it.name == "opt4j" }).isEmpty()) {
+		compile 'com.github.felixreimann:opt4j:v3.2'
+	} else {
+		compile project(':opt4j:opt4j-core')
+	}
 	
 	testCompile	group: 'junit',							name: 'junit',					version: '4.12'
 	testCompile 'com.github.FedorSmirnov89:constraintTester:v1.0.0'

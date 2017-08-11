@@ -3,7 +3,11 @@ dependencies {
 	compile parent.project('opendse-io')
 	compile parent.project('opendse-visualization')
 	
-	compile 'com.github.felixreimann:opt4j:v3.2'
+	if ((rootProject.subprojects.findAll { it.name == "opt4j" }).isEmpty()) {
+		compile 'com.github.felixreimann:opt4j:v3.2'
+	} else {
+		compile project(':opt4j:opt4j-core')
+	}
 	
 	testCompile 'junit:junit:4.12'
 	testCompile group: 'org.mockito', name: 'mockito-core', version: '2.22.0'
