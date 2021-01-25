@@ -6,4 +6,6 @@ dependencies {
 	compile files('libs/gurobi.jar')
 	
 	testCompile files('libs/gurobi.jar')
+	testCompile project(':opendse-generator')
+	testCompile project(':opendse-optimization')
 }
