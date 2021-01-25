@@ -7,7 +7,7 @@ dependencies {
 	compile group: 'net.java.dev.glazedlists',	name: 'glazedlists_java15', 		version: '1.9.0'
 	
 	if ((rootProject.subprojects.findAll { it.name == "opt4j" }).isEmpty()) {
-		compile group: 'org.opt4j',	name: 'opt4j-core', 		version: '3.1.4'
+		compile group: 'com.github.JoachimFalk.dse-opt4j',	name: 'opt4j-core', 		version: 'v3.1.4.JF1'
 	} else {
 		compile project(':opt4j:opt4j-core')
 	}
