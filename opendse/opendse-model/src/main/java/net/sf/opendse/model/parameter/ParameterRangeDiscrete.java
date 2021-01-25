@@ -25,7 +25,7 @@ package net.sf.opendse.model.parameter;
  * The {@code ParameterRangeDiscrete} is a {@link Integer}-valued parameter
  * within a lower and an upper bound.
  * 
- * @author Falko Höfte
+ * @author Falko Hoefte
  * 
  */
 public class ParameterRangeDiscrete implements Parameter {
