@@ -2,7 +2,7 @@ dependencies {
 	compile parent.project('opendse-model')
 	compile parent.project('opendse-optimization')
 	if ((rootProject.subprojects.findAll { it.name == "opt4j" }).isEmpty()) {
-		compile 'com.github.felixreimann:opt4j:v3.2'
+		compile 'com.github.JoachimFalk:dse-opt4j:v3.2.JF1'
 	} else {
 		compile project(':opt4j:opt4j-core')
 	}
