@@ -56,7 +56,7 @@ import edu.uci.ics.jung.graph.util.Pair;
  * The {@code SpecificationWriter} write a {@code Specification} to an
  * {@code OutputStream} or {@code File}.
  * 
- * @author Martin Lukasiewycz, Falko Höfte
+ * @author Martin Lukasiewycz, Falko Hoefte
  * 
  */
 public class SpecificationWriter {
